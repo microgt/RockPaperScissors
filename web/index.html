@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link typeof="text/css" rel="stylesheet" href="RPS.css">
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/stomp.js/2.3.3/stomp.min.js"></script>
+    <script src="RPS.js" type="text/javascript"></script>
+    <title>Welcome To Rock Paper Scissors!</title>
+</head>
+<body>
+<div id="loginf">
+    <label class="fp" for="pname">Enter Player Name</label>
+    <input class="fp" type="text" id="pname">
+    <button class="fp" id="setPlayer" type="button">Join</button>
+</div>
+<div id="firstPage">
+    <label class="fp" for="numOfTurns">Best of?</label>
+    <input class="fp" type="text" id="numOfTurns">
+    <button class="fp" id="setTurns" type="button">Set</button>
+</div>
+<div id="enclosed">
+    <div id="turns" class="section">
+        <div id="timing">
+            <div id="boo">Best out of #</div>
+            <div id="tim"></div>
+        </div>
+    </div>
+    <div id="main" class="section">
+        <div id="p1name"></div>
+        <img src=RockRev.png id="plR">
+        <div id="status"></div>
+        <img src=Rock.png id="pl2">
+        <div id="p2name"></div>
+    </div>
+    <div id="options" class="section">
+        <button id="rock" value="rock" type="button"><img src=Rock.png></button>
+        <button id="paper" value="paper" type="button"><img src=Paper.png></button>
+        <button id="sicssors" value="scissors" type="button"><img src=Sicssors.png></button>
+    </div>
+</div>
+</body>
+</html>
